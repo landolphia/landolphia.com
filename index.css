@@ -1,0 +1,142 @@
+/* Body */
+body#home {
+	background-color: #EEFFC6;
+	padding: 0.25em;
+}
+
+@media only screen and (min-width: 800px) {
+	body#home {
+		padding: 1em;
+	}
+}
+
+/* Layout */
+
+div.wrapper {
+	background-color: #DDEEB5;
+
+	border: 0.5em solid #CCEE82;
+	-moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-khtml-border-radius: 0.5em;
+	border-radius: 0.5em;
+
+	display: grid;
+	grid-template-rows: 2em 1em 3em 1fr;
+	grid-template-columns: 1fr;
+	grid-template-areas: "title-bar"
+	"site-navigation"
+	"project-navigation"
+	"project-container";
+}
+
+@media only screen and (min-width: 800px) {
+	div.wrapper {
+		border: 1em solid #CCEE82;
+		-moz-border-radius: 1em;
+		-webkit-border-radius: 1em;
+		-khtml-border-radius: 1em;
+		border-radius: 1em;
+
+		grid-template-rows: 3em 1fr;
+		grid-template-columns: 8em 1fr 6em;
+		grid-template-areas: "title-bar  title-bar title-bar"
+		"site-navigation project-container project-navigation";
+		margin: 0 auto;
+		max-width: 1280px;
+	}
+}
+
+/* Title bar */
+.title-bar {
+	font-family: "Courier New", Courier, monospace;
+	background-color: #DDEEB5;
+	color: #667740;
+	font-size: 1.25em;
+	grid-area: title-bar;
+}
+
+@media only screen and (min-width: 800px) {
+	.title-bar > h4 {
+		font-size: 2.0em;
+	}
+}
+
+/* Site navigation*/
+
+div.site-navigation {
+	background-color: #DDEEB5;
+	grid-area: site-navigation;
+}
+
+.site-navigation * li {
+	display: inline-block;
+}
+
+
+@media only screen and (min-width: 800px) {
+	.site-navigation * li {
+		display: block;
+	}
+}
+
+/* Project container */
+
+.project-container {
+	background-color: #EEFFC6;
+	grid-area: project-container;
+}
+
+.post {
+	font-family: "Lucida Console", Monaco, monospace;
+	background-color: inherit;
+	margin: 1em;
+	padding: 1em;
+}
+
+.post > h6 {
+	font-size: 1.2em;
+	font-weight: bolder;
+	margin-bottom: 1em;
+}
+
+.intro {
+	font-weight: lighter;
+	font-style: italic;
+}
+
+.section > h5 {
+	font-size: 1.05em;
+	font-weight: 600;
+	margin-bottom: 0.5em;
+}
+
+.section {
+	margin: 1em;
+	background-color: #EEFFAA;
+	padding: 1em;
+}
+
+/* Project navigation */
+
+.project-navigation {
+	background-color: #DDEEB5;
+	grid-area: project-navigation;
+
+	display:flex;
+	flex-direction: row;
+}
+
+@media only screen and (min-width: 800px) {
+	.project-navigation {
+		flex-direction: column;
+	}
+}
+
+.project-overview {
+	border: 3px dotted #667740;
+}
+
+.project-card {
+	border: 3px dotted #667740;
+}
