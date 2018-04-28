@@ -39,7 +39,7 @@ div.wrapper {
 		border-radius: 1em;
 
 		grid-template-rows: 3em 1fr;
-		grid-template-columns: 8em 1fr 6em;
+		grid-template-columns: 200px 1fr 6em;
 		grid-template-areas: "title-bar  title-bar title-bar"
 		"site-navigation project-container project-navigation";
 		margin: 0 auto;
@@ -77,19 +77,21 @@ div.wrapper {
 
 /* Site navigation*/
 
-/* Bookshelf */
-
-div.bookshelf {
-	background-color: #EEDD5B;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: flex-start;
-}
-
 div.site-navigation {
 	background-color: #DDEEB5;
 	grid-area: site-navigation;
+}
+
+/* Bookshelf */
+
+div.bookshelf {
+	border:15px ridge #513514;
+	background-color: #C79356;
+	display: flex;
+	height: 105px;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 
 /* Project container */
