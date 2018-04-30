@@ -1,0 +1,29 @@
+/* Project navigation */
+
+.project-navigation {
+	background-color: #DDEEB5;
+	grid-area: project-navigation;
+
+	display:flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+
+@media only screen and (min-width: 800px) {
+	.project-navigation {
+		flex-direction: column;
+	}
+}
+
+.project-overview {
+	border: 3px dotted #667740;
+	flex-basis: 8em;
+	order: 0;
+}
+
+.project-card {
+	border: 3px dotted #667740;
+	flex-basis: 24em;
+	order: 1;
+}

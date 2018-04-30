@@ -1,0 +1,48 @@
+/* Body */
+body#home {
+	background-color: #EEFFC6;
+	padding: 0.25em;
+}
+
+@media only screen and (min-width: 800px) {
+	body#home {
+		padding: 1em;
+	}
+}
+
+/* Layout */
+
+div.wrapper {
+	background-color: #DDEEB5;
+
+	border: 0.5em solid #CCEE82;
+	-moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+	-khtml-border-radius: 0.5em;
+	border-radius: 0.5em;
+
+	display: grid;
+	grid-template-rows: 2em 1em 3em 1fr;
+	grid-template-columns: 1fr;
+	grid-template-areas: "title-bar"
+	"site-navigation"
+	"project-navigation"
+	"project-container";
+}
+
+@media only screen and (min-width: 800px) {
+	div.wrapper {
+		border: 1em solid #CCEE82;
+		-moz-border-radius: 1em;
+		-webkit-border-radius: 1em;
+		-khtml-border-radius: 1em;
+		border-radius: 1em;
+
+		grid-template-rows: 3em 1fr;
+		grid-template-columns: 8em 1fr 6em;
+		grid-template-areas: "title-bar  title-bar title-bar"
+		"site-navigation project-container project-navigation";
+		margin: 0 auto;
+		max-width: 1280px;
+	}
+}

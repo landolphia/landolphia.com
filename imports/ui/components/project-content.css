@@ -1,0 +1,36 @@
+/* Project container */
+
+.project-container {
+	background-color: #EEFFC6;
+	grid-area: project-container;
+}
+
+.post {
+	font-family: "Lucida Console", Monaco, monospace;
+	background-color: inherit;
+	margin: 1em;
+	padding: 1em;
+}
+
+.post > h6 {
+	font-size: 1.2em;
+	font-weight: bolder;
+	margin-bottom: 1em;
+}
+
+.intro {
+	font-weight: lighter;
+	font-style: italic;
+}
+
+.section > h5 {
+	font-size: 1.05em;
+	font-weight: 600;
+	margin-bottom: 0.5em;
+}
+
+.section {
+	margin: 1em;
+	background-color: #EEFFAA;
+	padding: 1em;
+}
